@@ -1,0 +1,19 @@
+export const STORE_CONSTANTS = {
+  THEME: {
+    NAME: 'THEME',
+  },
+} as const;
+
+export const ROUTES = {
+  AUTH: {SIGNUP: 'SIGNUP', LOGIN: 'LOGIN'},
+  DRAWER: {
+    HOME: 'HOME',
+    COLLECTIONS: 'COLLECTIONS',
+    MYGAMES: 'MYGAMES',
+    WISHLIST: 'WISHLIST',
+  },
+  HOME_STACK_SCREEN: {
+    GAMES_SCREEN: 'GAMES_SCREEN',
+    GAME_DETAILS_SCREEN: 'GAME_DETAILS_SCREEN',
+  },
+} as const;
