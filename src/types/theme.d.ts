@@ -1,5 +1,5 @@
 import {Dispatch, SetStateAction} from 'react';
-import {ImageStyle, TextStyle, ViewStyle} from 'react-native';
+import {ImageStyle, TextProps, TextStyle, ViewStyle} from 'react-native';
 
 declare global {
   interface ThemeContextType {
@@ -7,7 +7,7 @@ declare global {
     setIsDark: Dispatch<SetStateAction<boolean>>;
   }
 
-  type Colors = {
+  interface Colors {
     red500: string;
     fixedGray800: string;
     gray800: string;
@@ -28,9 +28,9 @@ declare global {
     orange400: string;
     green600: string;
     transparent: string;
-    blue500: string;
     yellow500: string;
-  };
+  }
+
   type ScalingMetrics = {
     horizontalScale: (size: number) => number;
     verticalScale: (size: number) => number;
@@ -47,4 +47,22 @@ declare global {
     themeColors: Colors,
     scalingMetrics: ScalingMetrics,
   ) => T;
+
+  type FontWeight =
+    | 'normal'
+    | 'bold'
+    | '100'
+    | '200'
+    | '300'
+    | '400'
+    | '500'
+    | '600'
+    | '700'
+    | '800'
+    | '900';
+
+  interface CustomTextProps extends TextProps {
+    weight?: FontWeight;
+    italic?: boolean;
+  }
 }

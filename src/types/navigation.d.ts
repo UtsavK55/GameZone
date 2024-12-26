@@ -10,9 +10,18 @@ declare global {
   type DrawerNavigationType = NavigationProp<DrawerScreenParamList>;
 
   type HomeScreenNames = keyof typeof ROUTES.HOME_STACK_SCREEN;
-  type HomeScreenParamList = Record<HomeScreenNames, undefined>;
+  type HomeScreenParamList = {
+    GAMES_SCREEN: undefined;
+    GAME_DETAILS_SCREEN: {gameId: number};
+  };
   type HomeNavigationType = NavigationProp<HomeScreenParamList>;
 
+  type CollectionScreenNames = keyof typeof ROUTES.COLLECTION_STACK_SCREEN;
+  type CollectionScreenParamList = {
+    COLLECTION_SCREEN: undefined;
+    COLLECTION_DETAILS_SCREEN: {collectionId: number; collectionName: string};
+  };
+  type CollectionNavigationType = NavigationProp<CollectionScreenParamList>;
 
   interface DrawerItemProps {
     routeName: string;

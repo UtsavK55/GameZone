@@ -7,9 +7,9 @@ export const useThemeColors = () => {
   const colorsLight: Colors = {
     red500: '#FF0000',
     fixedGray800: '#6a6a6a',
-    gray800: '#333333',
-    gray600: '#666666',
-    gray500: '#888888',
+    gray800: '#6a6a6a',
+    gray600: '#969696',
+    gray500: '#aaaaaa',
     gray400: '#bdbdbd',
     gray300: '#d1d1d1',
     gray200: '#e3e3e3',
@@ -25,7 +25,6 @@ export const useThemeColors = () => {
     orange400: '#ffbb32',
     green600: '#158016',
     transparent: 'rgba(0, 0, 0, 0.5)',
-    blue500: '#1eaaf1',
     yellow500: '#FFD700',
   } as const;
 
@@ -35,12 +34,12 @@ export const useThemeColors = () => {
     gray800: '#f7f7f7',
     gray600: '#d1d1d1',
     gray500: '#aaaaaa',
-    gray400: '#888888',
-    gray300: '#666666',
+    gray400: '#E0E0E0',
+    gray300: '#d1d1d1',
     gray200: '#333333',
-    gray100: '#222222',
-    gray50: '#1a1a1a',
-    white: '#2A2A2A',
+    gray100: '#000000',
+    gray50: '#000000',
+    white: '#000000',
     fixedWhite: '#FFFFFF',
     black: '#FFFFFF',
     fixedBlack: '#000000',
@@ -48,9 +47,8 @@ export const useThemeColors = () => {
     orange600: '#ffbb32',
     orange500: '#ffa30a',
     orange400: '#fa8900',
-    green600: '#1ebd1e',
-    transparent: 'rgba(255, 255, 255, 0.1)',
-    blue500: '#3bbfff',
+    green600: '#158016',
+    transparent: 'rgba(0, 0, 0, 0.5)',
     yellow500: '#FFD700',
   } as const;
 
@@ -77,6 +75,20 @@ export const gutters = {
   '3xl': 24,
   '4xl': 32,
   '5xl': 40,
+};
+
+export const fontFamily = {
+  normal: 'Roboto-Regular',
+  bold: 'Roboto-Bold',
+  '100': 'Roboto-Thin',
+  '200': 'Roboto-ExtraLight',
+  '300': 'Roboto-Light',
+  '400': 'Roboto-Regular',
+  '500': 'Roboto-Medium',
+  '600': 'Roboto-SemiBold',
+  '700': 'Roboto-Bold',
+  '800': 'Roboto-ExtraBold',
+  '900': 'Roboto-Black',
 };
 
 export const layout = StyleSheet.create({
