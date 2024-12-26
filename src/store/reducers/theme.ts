@@ -6,7 +6,7 @@ import {switchThemeAction} from '@store/actions/themeActions';
 const {NAME: sliceName} = STORE_CONSTANTS.THEME;
 
 const initialState: ThemeState = {
-  isDark: false,
+  isDark: true,
 };
 
 const themeSlice = createSlice({
